@@ -17,6 +17,8 @@ module.exports = defineConfig({
   e2e: {
     specPattern: "**/*.feature",
     chromeWebSecurity: false,
+    video: false,
+    supportFile: false,
     setupNodeEvents,
   },
 });
