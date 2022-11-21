@@ -7,7 +7,7 @@ Given("Je suis sur le site saucedemo", () => {
 When("Je complete le formulaire d'authentification", () => {
   cy.get('[data-test="username"]').type("standard_user");
   cy.get('[data-test="password"]').type("secret_sauce");
-  cy.get('[data-test="login-button"]').should("not.be.disabled").click();
+  cy.get('[data-test="login-button"]').should("be.disabled").click();
 });
 
 Then("Je suis connecté avec succès", () => {
